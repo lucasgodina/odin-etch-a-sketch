@@ -1,14 +1,86 @@
+/* Catppuccin Palette */
+:root {
+	--base: #1e1e2e;
+	--mantle: #181825;
+	--crust: #11111b;
+	--text: #cdd6f4;
+	--subtext0: #a6adc8;
+	--subtext1: #bac2de;
+	--surface0: #313244;
+	--surface1: #45475a;
+	--surface2: #585b70;
+	--overlay0: #6c7086;
+	--overlay1: #7f849c;
+	--overlay2: #9399b2;
+	--blue: #89b4fa;
+	--lavender: #b4befe;
+	--red: #f38ba8;
+	--green: #a6e3a1;
+	--yellow: #f9e2af;
+	--peach: #fab387;
+	--maroon: #eba0ac;
+	--pink: #f5c2e7;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+body {
+	background-color: var(--base);
+	color: var(--text);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin: 0;
+	color: var(--lavender);
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 480px;
+	height: 480px;
 	margin: 0 auto;
+	border: 3px solid var(--surface2);
+	background-color: var(--mantle);
 }
 
 .square {
-	width: 30px;
-	height: 30px;
-	background-color: darkblue;
+	background-color: var(--surface0);
 	box-sizing: border-box;
-	border: 1px solid black;
+	border: 1px solid var(--surface2);
+}
+
+button {
+	background-color: var(--red);
+	color: var(--text);
+	border: none;
+	padding: 10px 20px;
+	margin: 10px;
+	cursor: pointer;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: var(--lavender);
+}
+
+a {
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--blue);
 }
